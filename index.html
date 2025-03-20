@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css" class="rel href">
-  <link rel="icon" href="common/logo.ico">
+  <link rel="icon" href="images/logo1.png">
   <title>KhetGuru</title>
 </head>
 
@@ -16,8 +16,10 @@
 
   <header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a target="_blank" class="navbar-brand" href="https://khetguru.netlify.app">KhetGuru</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="https://realorangeind.github.io/KhetGuru">
+        <img id="logo" width="131px" src="images/logo.png">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="#navbar"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,16 +28,16 @@
       <div class="collapse navbar-collapse justify-content-md-center" style="padding-right: 6.2rem;" id="navbar">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="/KhetGuru/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/KhetGuru/competitions/">Competitions</a>
+            <a class="nav-link" href="#competitions">Competitions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/KhetGuru/gallery/">Gallery</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/KhetGuru/contact/">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -43,90 +45,225 @@
   </header>
 
   <main role="main">
-
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3 text-secondary">What is KhetGuru?</h1>
-        <p>KhetGuru will be a pioneering agricultural project to transform farming practices through the integration of
-          technology and community support. This innovative initiative combines soil sensors, data analytics, and a
-          community-driven mobile application to optimize crop selection and promote knowledge sharing among farmers.
-        </p>
-      </div>
-    </div>
-
-    <div class="container marketing">
-      <div class="row">
-        <div class="col-lg-6">
-          <img class="rounded-circle" src="common/hardware.svg" alt="hardware image" width="140" height="140"
-            alt="hardware image">
-          <h2>Hardware</h2>
-          <p>The hardware will incorporate a range of sensors, including NPK (Nitrogen, Phosphorus, Potassium),
-            Moisture, Water Level, and pH with ARDUINO as microcontroller, to provide an in-depth analysis of soil
-            composition. These sensors will be combined to make a single device that can be strategically placed in
-            farmlands to monitor critical soil parameters. </p>
-        </div>
-        <div class="col-lg-6">
-          <img class="rounded-circle" src="common/software.svg" alt="software image" width="140" height="140">
-          <h2>Software</h2>
-          <p>The software will have an advanced data analytics engine which processes the data from the sensors and
-            generates
-            personalized crop recommendations for each farmer based on their specific soil conditions. This data-driven
-            approach assists farmers in making informed decisions about the crops they should cultivate.</p>
-        </div>
-      </div>
-
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Set the device on your <span class="text-muted">soil.</span>
-          </h2>
-          <p class="lead">Set our device on your soil so that our sensors reach inside. The device will then analyze the
-            soil and provide various details about the soil such as composition of macronutrients and pH of the soil.
+    <section id="home" class="pt-5">
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3 text-secondary">KhetGuru</h1>
+          <p>KhetGuru will be a pioneering agricultural project to transform farming practices through the integration
+            of
+            technology and community support. This innovative initiative combines soil sensors, data analytics, and a
+            community-driven mobile application to optimize crop selection and promote knowledge sharing among farmers.
           </p>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" src="images/Device.png" alt="A picture of the device">
+      </div>
+
+      <div class="container marketing">
+        <div class="row" id="components">
+          <div class="col-lg-6 border">
+            <img class="rounded-circle" src="images/hardware.svg" alt="hardware image" width="140" height="140"
+              alt="hardware image">
+            <h2>Hardware</h2>
+            <p>The hardware will incorporate a range of sensors, including NPK (Nitrogen, Phosphorus, Potassium),
+              Moisture, Water Level, and pH with ARDUINO as microcontroller, to provide an in-depth analysis of soil
+              composition. These sensors will be combined to make a single device that can be strategically placed in
+              farmlands to monitor critical soil parameters. </p>
+          </div>
+          <div class="col-lg-6 border">
+            <img class="rounded-circle" src="images/software.svg" alt="software image" width="140" height="140">
+            <h2>Software</h2>
+            <p>The software will have an advanced data analytics engine which processes the data from the sensors and
+              generates
+              personalized crop recommendations for each farmer based on their specific soil conditions. This
+              data-driven
+              approach assists farmers in making informed decisions about the crops they should cultivate.</p>
+          </div>
+        </div>
+
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Set the device on your <span class="text-muted">soil.</span>
+            </h2>
+            <p class="lead">Set our device on your soil so that our sensors reach inside. The device will then analyze
+              the
+              soil and provide various details about the soil such as composition of macronutrients and pH of the soil.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto border" src="images/Device.png"
+              alt="A picture of the device">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Enter the details in our <span class="text-muted">app.</span></h2>
+            <p class="lead">Enter your preferences and the details of your soil analyzed by the device in our app which
+              has a multitude of supported languages and a user-friendly design.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto border" src="images/App_1.png"
+              alt="A picture of analysis being inputted">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Get all your <span class="text-muted">crop recommendations.</span></h2>
+            <p class="lead">The app will then use various algorithms to further analyze the data to provide you with a
+              report recommending the best crops to grow on the soil along with estimated costs and requirements.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto border" src="images/App_2.png"
+              alt="A picture of the recommendations">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+      </div>
+    </section>
+
+    <section id="competitions">
+      <div class="position-relative overflow-hidden p-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 font-weight-normal">Competitions</h1>
+          <p class="lead font-weight-normal">All the competitions and exhibits KhetGuru has been represented in.</p>
         </div>
       </div>
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Enter the details in our <span class="text-muted">app.</span></h2>
-          <p class="lead">Enter your preferences and the details of your soil analyzed by the device in our app which
-            has a multitude of supported languages and a user-friendly design.</p>
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 pb-5 text-center text-white overflow-hidden">
+          <div class="my-3 py-3">
+            <h2 class="display-5">IIT KGP Young Innovators Programme</h2>
+            <p class="lead">KhetGuru was one of the 30 projects selected in 2023.</p>
+          </div>
+          <img src="images/IIT_KGP.png" alt="IIT Kharagpur" class="bg-secondary box-shadow mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px;">
         </div>
-        <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto border" src="images/App_1.png"
-            alt="A picture of analysis being inputted">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Get all your <span class="text-muted">crop recommendations.</span></h2>
-          <p class="lead">The app will then use various algorithms to further analyze the data to provide you with a
-            report recommending the best crops to grow on the soil along with estimated costs and requirements.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" src="images/App_2.png" alt="A picture of the recommendations">
+        <div class="bg-warning mr-md-3 pt-3 px-3 pt-md-5 px-md-5 pb-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Blue Bells Business Summit</h2>
+            <p class="lead">KhetGuru won first place at the Blue Bells Business Summit 2024.</p>
+          </div>
+          <img src="images/BBMS.png" alt="Blue Bells Model School" class="bg-secondary box-shadow mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px;">
         </div>
       </div>
 
-      <hr>
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="bg-success mr-md-3 pt-3 px-3 pt-md-5 px-md-5 pb-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">CBSE Science Exhibition at AIS Sector 46</h2>
+            <p class="lead">KhetGuru was selected as one of the exhibits in 2023.</p>
+          </div>
+          <img src="images/AIS.png" alt="Amity International School, Sector 46, Gurugram"
+            class="bg-secondary box-shadow mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px;">
+        </div>
+        <div class="bg-info mr-md-3 pt-3 px-3 pt-md-5 px-md-5 pb-5 text-center text-white overflow-hidden">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Ridge Valley STEM Fest</h2>
+            <p class="lead">KhetGuru won second place at Ridge Valley STEM Fest 2024.</p>
+          </div>
+          <img src="images/RVS.png" alt="Ridge Valley School" class="bg-secondary box-shadow mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px;">
+        </div>
+      </div>
 
-    </div>
+      <div class="container">
+        <hr>
+      </div>
+    </section>
+
+    <section id="gallery">
+
+    </section>
+
+    <section id="contact">
+
+      <div class="position-relative overflow-hidden p-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 font-weight-normal">Contact</h1>
+          <p class="lead font-weight-normal">Contact information of everyone involved in making KhetGuru possible.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="p-3 my-3 text-dark bg-purple rounded shadow-sm">
+          <h2 class="mt-2">School Counsellor</h2>
+          <div class="px-3 py-2">
+            <p class="text-secondary">Email: <span class="text-info">neelu.s@ridgevalleyschool.org</span></p>
+            <p class="text-secondary">Mobile Number: <span class="text-info">+91 98918 19689</span></p>
+          </div>
+
+          <hr>
+
+          <h2 class="mt-2">Team Members</h2>
+          <div class="px-3 py-2">
+            <p class="text-secondary">Email: <span class="text-info">kesh6897@gmail.com</span></p>
+            <p class="text-secondary">Mobile Number: <span class="text-info">+91 93102 96802</span></p>
+            <hr>
+            <p class="text-secondary pt-2">Email: <span class="text-info">vedantray250308@gmail.com</span></p>
+            <p class="text-secondary">Mobile Number: <span class="text-info">+91 99540 07770</span></p>
+            <hr>
+            <p class="text-secondary">Email: <span class="text-info">sahgalrishaan@gmail.com</span></p>
+            <p class="text-secondary pb-2">Mobile Number: <span class="text-info">+91 81305 32508</span></p>
+          </div>
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded shadow-sm">
+          <h6 class="border-bottom border-gray pb-2 mb-0">All members</h6>
+          <div class="media text-muted pt-3">
+            <img class="bd-placeholder-img mr-2 rounded" width="32px" height="32px" src="images/creative.svg" alt="pic">
+            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+              <div class="d-flex justify-content-between align-items-center w-100">
+                <strong class="text-gray-dark">Keshav Malik</strong>
+                <a target="_blank" href="https://www.instagram.com/kesh.6278/">Follow</a>
+              </div>
+              <span class="d-block">Creative and Business Lead</span>
+            </div>
+          </div>
+          <div class="media text-muted pt-3">
+            <img class="bd-placeholder-img mr-2 rounded" width="32px" height="32px" src="images/hardware.svg" alt="pic">
+            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+              <div class="d-flex justify-content-between align-items-center w-100">
+                <strong class="text-gray-dark">Rishaan Sahgal</strong>
+                <a target="_blank" href="https://www.linkedin.com/in/rishaansahgal/">Follow</a>
+              </div>
+              <span class="d-block">Hardware Lead</span>
+            </div>
+          </div>
+          <div class="media text-muted pt-3">
+            <img class="bd-placeholder-img mr-2 rounded" width="32px" height="32px" src="images/software.svg" alt="pic">
+            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+              <div class="d-flex justify-content-between align-items-center w-100">
+                <strong class="text-gray-dark">Vedant Ray</strong>
+                <a target="_blank" href="https://www.linkedin.com/in/vedantray">Follow</a>
+              </div>
+              <span class="d-block">Software Lead</span>
+            </div>
+          </div>
+          <p class="pt-4">Or contact our official email: <span class="text-info">contactkhetguru@gmail.com</span></p>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.529816640364!2d77.07732947553647!3d28.463586775757353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18ddee9794ed%3A0x125fc796e0772368!2sRidge%20Valley%20School!5e0!3m2!1sen!2sin!4v1723309108160!5m2!1sen!2sin"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <hr>
+      </div>
+    </section>
 
   </main>
 
   <footer class="container text-center">
-    <p>Designed and maintained by <a target="_blank" href="https://www.linkedin.com/in/vedantray"
-        class="text-info">Vedant Ray</a></p>
+    <p>&copy KhetGuru</p>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
